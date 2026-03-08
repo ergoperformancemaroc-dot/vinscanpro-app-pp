@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Politique de confidentialité Vin Scan Pro - Protection des données conformément à la loi 09-08 du Maroc">
+    <meta name="robots" content="index, follow">
+    <title>Politique de Confidentialité - Vin Scan Pro</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #1e293b;
+            --accent-color: #1e40af;
+            --text-color: #334155;
+            --text-light: #64748b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --success-color: #16a34a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin: 10px 0 0 0;
+            font-weight: 400;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--success-color), #22c55e);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+        }
+
+        section:not(:last-of-type) {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 0 0 20px 0;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 24px;
+            background: var(--accent-color);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+            color: var(--text-color);
+        }
+
+        strong {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 24px;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 8px;
+            position: relative;
+        }
+
+        li::before {
+            content: "→";
+            position: absolute;
+            left: -16px;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 700;
+            background: #eff6ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .box-info {
+            background: #f0f9ff;
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .box-info p {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .box-security {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            border-left: 4px solid var(--success-color);
+            padding: 16px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .box-security p {
+            margin: 0;
+            color: #166534;
+        }
+
+        .contact-section {
+            background: #f1f5f9;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .contact-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .footer-info {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin: 8px 0;
+        }
+
+        .toc {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .toc-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .toc ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li::before {
+            content: "§";
+            left: -18px;
+            color: var(--accent-color);
+        }
+
+        .toc a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .last-update {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.875rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 16px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            h2::before {
+                width: 3px;
+                height: 20px;
+            }
+
+            .toc {
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 24px 12px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            .badge {
+                display: block;
+                margin-top: 12px;
+            }
+        }
+
+        /* Impression */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            a {
+                color: var(--accent-color);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Politique de Confidentialité</h1>
+            <p class="subtitle"><strong>Vin Scan Pro</strong></p>
+            <span class="badge">✓ Conforme Loi 09-08 (Maroc)</span>
+        </header>
+
+        <div class="toc">
+            <div class="toc-title">📑 Sommaire</div>
+            <ul>
+                <li><a href="#legal-compliance">Conformité légale et cadre juridique</a></li>
+                <li><a href="#data-collection">Collecte et traitement des données</a></li>
+                <li><a href="#technical-flow">Flux technique détaillé</a></li>
+                <li><a href="#data-transfer">Transfert et sécurité des données</a></li>
+                <li><a href="#user-rights">Vos droits (Loi 09-08)</a></li>
+                <li><a href="#security">Mesures de sécurité</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+            </ul>
+        </div>
+
+        <section id="introduction">
+            <p><strong>Vin Scan Pro</strong> s'engage fermement à protéger vos données personnelles et techniques. Cette
+                politique détaille comment nous traitons, sécurisons et respectons vos informations en conformité
+                stricte avec la législation marocaine et les standards internationaux.</p>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 20px;">🔒 <em>Philosophie :
+                    "Local-First" = Vos données restent sur votre appareil. Point.</em></p>
+        </section>
+
+        <section id="legal-compliance">
+            <h2>Conformité légale et cadre juridique</h2>
+
+            <h3>Loi 09-08 du Maroc (CNDP)</h3>
+            <p>Le traitement des données à caractère personnel effectué par <strong>Vin Scan Pro</strong> est <span
+                    class="highlight">strictement conforme</span> à la <strong>loi n° 09-08</strong> relative à la
+                protection des personnes physiques à l'égard du traitement des données à caractère personnel, promulguée
+                par le dahir n° 1-09-15 du 18 février 2009 au Maroc.</p>
+
+            <div class="box-info">
+                <p>✓ Respect des articles 1 à 60 de la loi 09-08, incluant les principes de licéité, loyauté,
+                    transparence et limitation de l'usage.</p>
+            </div>
+
+            <h3>Responsable du traitement</h3>
+            <ul>
+                <li><strong>Entité :</strong> Maroc Auto Guide</li>
+                <li><strong>Secteur :</strong> Technologie automobile & services numériques</li>
+                <li><strong>Juridiction :</strong> Maroc</li>
+            </ul>
+
+            <h3>Finalité légale du traitement</h3>
+            <p>Les données sont traitées <strong>exclusivement</strong> pour :</p>
+            <ul>
+                <li>Permettre l'identification et l'analyse technique des véhicules via VIN</li>
+                <li>Générer des rapports d'expertise pour l'utilisateur (propriétaire du terminal)</li>
+                <li>Améliorer la précision de l'OCR et de l'IA (via agrégation anonymisée)</li>
+                <li>Assurer la sécurité et la conformité réglementaire</li>
+            </ul>
+        </section>
+
+        <section id="data-collection">
+            <h2>Collecte et traitement des données</h2>
+
+            <p><strong>Vin Scan Pro</strong> fonctionne sur un modèle <span class="highlight">Local-First</span> : la
+                majority de vos données sont stockées localement sur votre appareil, <strong>jamais sur des serveurs
+                    externes</strong> par défaut.</p>
+
+            <h3>1️⃣ Accès Caméra (OCR)</h3>
+            <ul>
+                <li><strong>Périmètre :</strong> Lecture du numéro VIN uniquement via technologie OCR (Tesseract.js)
+                </li>
+                <li><strong>Stockage de l'image :</strong> L'image brute n'est <strong>jamais</strong> sauvegardée sur
+                    nos serveurs, ni dans le cloud</li>
+                <li><strong>Durée :</strong> Traitée instantanément en mémoire, supprimée après extraction du texte</li>
+                <li><strong>Permission :</strong> Vous contrôlez l'accès caméra via les paramètres de votre système
+                    d'exploitation</li>
+            </ul>
+
+            <div class="box-security">
+                <p>✓ <strong>Aucune image n'est collectée à des fins de surveillance, revendue à des tiers, ou stockée
+                        de manière permanente.</strong></p>
+            </div>
+
+            <h3>2️⃣ Données techniques (VIN + Expertise IA)</h3>
+            <ul>
+                <li><strong>VIN extrait :</strong> Stocké localement dans IndexedDB (base de données du navigateur)</li>
+                <li><strong>Rapports d'expertise :</strong> Générés via Google Gemini AI et stockés localement</li>
+                <li><strong>Historique des scans :</strong> Conservé localement sous votre contrôle</li>
+                <li><strong>Accès utilisateur :</strong> Consultation, modification ou suppression possibles à tout
+                    moment depuis l'application</li>
+            </ul>
+
+            <h3>3️⃣ Transfert IA vers Google Gemini</h3>
+            <ul>
+                <li><strong>Données envoyées :</strong> <span class="highlight">Texte VIN uniquement</span> (ex:
+                    "5TDZXRFH8LS123456")</li>
+                <li><strong>Format :</strong> Requête API chiffrée HTTPS (TLS 1.3+)</li>
+                <li><strong>Contenu :</strong> Aucune image, aucune donnée personnelle identifiante</li>
+                <li><strong>Traitement :</strong> Analyse technique anonymisée pour générer le rapport</li>
+                <li><strong>Stockage cloud :</strong> Passe par Google Gemini, sujet aux conditions Google (données en
+                    transit, non persistées chez nous)</li>
+            </ul>
+
+            <div class="box-info">
+                <p><strong>Clarification importante :</strong> Google reçoit uniquement le VIN pour décodage IA. Aucun
+                    contexte personnel, aucune image, aucune localisation. Les conditions de confidentialité Google
+                    s'appliquent pour ce flux spécifique.</p>
+            </div>
+
+            <h3>4️⃣ Données locales indexées (IndexedDB)</h3>
+            <ul>
+                <li><strong>Lieu de stockage :</strong> Appareil utilisateur (téléphone, tablette, ordinateur)</li>
+                <li><strong>Contenu :</strong> Historique des VIN, dates/heures, rapports générés</li>
+                <li><strong>Chiffrement :</strong> Dépend du chiffrement native du système d'exploitation</li>
+                <li><strong>Suppression :</strong> Utilisateur peut vider tout l'historique en un clic</li>
+            </ul>
+        </section>
+
+        <section id="technical-flow">
+            <h2>Flux technique détaillé</h2>
+
+            <p>Voici le cycle complet de traitement d'un scan VIN :</p>
+
+            <div
+                style="background: #f5f7fa; padding: 20px; border-radius: 8px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.9rem; line-height: 1.8; overflow-x: auto;">
+                <strong style="color: var(--primary-color);">1. Capture caméra</strong><br>
+                Utilisateur → Appareil photo → Image temporaire en mémoire<br><br>
+
+                <strong style="color: var(--primary-color);">2. Extraction OCR (Local)</strong><br>
+                Image → Tesseract.js → Texte VIN<br>
+                ⚠️ Image supprimée de la mémoire<br><br>
+
+                <strong style="color: var(--primary-color);">3. Stockage local</strong><br>
+                VIN → IndexedDB (appareil)<br>
+                ✓ Persisté localement, sous contrôle utilisateur<br><br>
+
+                <strong style="color: var(--primary-color);">4. Traitement IA (optionnel)</strong><br>
+                VIN → Requête HTTPS chiffrée → Google Gemini API<br>
+                ✓ Analyse technique → Rapport généré<br><br>
+
+                <strong style="color: var(--primary-color);">5. Résultat final</strong><br>
+                Rapport → IndexedDB local<br>
+                ✓ Affichage utilisateur, prêt à exporter/imprimer<br><br>
+
+                <strong style="color: var(--primary-color);">6. Suppression (Utilisateur)</strong><br>
+                Bouton "Supprimer historique" → Données locales effacées<br>
+                ✓ Aucune trace résiduelle
+            </div>
+
+            <p><strong>Résumé :</strong> Vos données restent <span class="highlight">100% locales</span> sauf pour
+                l'étape IA où seul le VIN transite via Google.</p>
+        </section>
+
+        <section id="data-transfer">
+            <h2>Transfert et sécurité des données</h2>
+
+            <h3>Chiffrement en transit</h3>
+            <ul>
+                <li><strong>Protocole :</strong> HTTPS TLS 1.3 minimum</li>
+                <li><strong>Certificat :</strong> Signé par autorité de confiance (Let's Encrypt, DigiCert)</li>
+                <li><strong>Scope :</strong> Requêtes API vers Google Gemini uniquement</li>
+            </ul>
+
+            <h3>Données chez Google Gemini</h3>
+            <ul>
+                <li><strong>Accord :</strong> Conformité Data Processing Agreement (DPA) Google Cloud</li>
+                <li><strong>Localisation :</strong> Serveurs Google (soumis aux lois applicables où situés)</li>
+                <li><strong>Durée :</strong> Données en transit, non persistées dans nos systèmes</li>
+                <li><strong>Accès :</strong> Limité aux logs techniques de Google</li>
+            </ul>
+
+            <h3>Stockage local (IndexedDB)</h3>
+            <ul>
+                <li><strong>Chiffrement :</strong> Hérité du chiffrement natif de l'appareil (FileSystem Encryption iOS,
+                    Android Keystore)</li>
+                <li><strong>Accès :</strong> Protégé par authentification de l'appareil (PIN, Face ID, empreinte)</li>
+                <li><strong>Sauvegarde cloud :</strong> Si l'utilisateur active la sauvegarde système (iCloud, Google
+                    Drive), elle est soumise à la sécurité du service cloud choisi</li>
+            </ul>
+
+            <div class="box-security">
+                <p>✓ <strong>Principe de sécurité minimale :</strong> Aucune donnée PII (informations personnelles
+                    identifiantes) n'est jamais collectée. Seul le VIN (techniquement, une donnée technique anonyme du
+                    véhicule) et les rapports générés sont traités.</p>
+            </div>
+        </section>
+
+        <section id="user-rights">
+            <h2>Vos droits (Loi 09-08 du Maroc)</h2>
+
+            <p>Conformément aux articles 15 à 27 de la loi 09-08, vous disposez de droits fondamentaux et inaliénables
+                sur vos données :</p>
+
+            <h3>1. Droit d'accès (Article 15)</h3>
+            <p>Vous pouvez consulter l'ensemble des données stockées dans l'application à tout moment.</p>
+            <ul>
+                <li>Accédez à l'onglet "Historique" pour visualiser tous vos scans</li>
+                <li>Consultez les rapports générés directement dans l'application</li>
+                <li>Exportez vos données au format JSON ou PDF</li>
+            </ul>
+
+            <h3>2. Droit de rectification (Article 16)</h3>
+            <p>Vous pouvez modifier ou corriger vos informations locales à tout moment.</p>
+            <ul>
+                <li>Modifiez les notes associées à un scan</li>
+                <li>Corrigez des erreurs d'entrée manuellement</li>
+                <li>Mettez à jour votre profil utilisateur local</li>
+            </ul>
+
+            <h3>3. Droit à l'oubli / Suppression (Article 17)</h3>
+            <p>Vous pouvez demander la suppression de vos données à tout moment.</p>
+            <ul>
+                <li>Supprimez un scan spécifique depuis l'interface</li>
+                <li>Effacez l'historique complet en un clic</li>
+                <li>Contactez-nous pour une suppression complète incluant les logs Google (traitement dans 30 jours)
+                </li>
+            </ul>
+
+            <h3>4. Droit d'opposition (Article 18)</h3>
+            <p>Vous pouvez vous opposer au traitement de vos données pour des motifs légitimes.</p>
+            <ul>
+                <li>Refusez l'analyse IA en désactivant l'option "Expertise Google Gemini"</li>
+                <li>Utilisez l'application en mode "Scan local uniquement" (OCR sans IA)</li>
+                <li>Contactez-nous pour toute objection légale spécifique</li>
+            </ul>
+
+            <h3>5. Droit à la portabilité (Article 19)</h3>
+            <p>Vous pouvez recevoir vos données dans un format lisible et portable.</p>
+            <ul>
+                <li>Exportez votre historique au format CSV, JSON ou PDF</li>
+                <li>Transférez ces données vers une autre application</li>
+            </ul>
+
+            <h3>6. Droit à la limitation du traitement (Article 20)</h3>
+            <p>Vous pouvez demander la limitation du traitement dans certains cas.</p>
+            <ul>
+                <li>Mettez en pause la synchronisation cloud (si activée)</li>
+                <li>Limitez l'usage de vos données pour amélioration d'IA</li>
+            </ul>
+        </section>
+
+        <section id="security">
+            <h2>Mesures de sécurité</h2>
+
+            <h3>Techniques</h3>
+            <ul>
+                <li><strong>Chiffrement TLS 1.3+ :</strong> Toutes les communications avec Google Gemini</li>
+                <li><strong>Pas de cookies de suivi :</strong> Aucun tracker tiers (Google Analytics, Facebook Pixel,
+                    etc.)</li>
+                <li><strong>Code source sécurisé :</strong> Révisions régulières, dépendances à jour</li>
+                <li><strong>Stockage local isolé :</strong> IndexedDB protégé par Same-Origin Policy</li>
+            </ul>
+
+            <h3>Organisationnelles</h3>
+            <ul>
+                <li><strong>Équipe réduite :</strong> Accès limité aux données</li>
+                <li><strong>Audit de sécurité :</strong> Révisions mensuelles des pratiques</li>
+                <li><strong>Incident response :</strong> Plan de réaction aux violations (notification dans 72h si
+                    applicable)</li>
+                <li><strong>Conformité continue :</strong> Mise à jour des pratiques avec évolutions légales</li>
+            </ul>
+
+            <div class="box-security">
+                <p>✓ <strong>Standard automobile :</strong> Vin Scan Pro suit les bonnes pratiques du secteur automobile
+                    et des standards cybersécurité (OWASP Top 10, SANS Top 25).</p>
+            </div>
+
+            <h3>Limitation de responsabilité</h3>
+            <p>Bien que nous mettions en œuvre des mesures appropriées, aucune transmission internet n'est 100%
+                sécurisée. Si vous découvrez une faille, signalez-la via <a
+                    href="mailto:contact@marocautoguide.com?subject=Signalement%20de%20sécurité%20VinScanPro"
+                    class="contact-link">contact@marocautoguide.com</a> (Responsible Disclosure).</p>
+        </section>
+
+        <section id="contact">
+            <h2>Nous contacter</h2>
+
+            <p>Pour toute question relative à cette politique, exercer vos droits, ou signaler une incident :</p>
+
+            <div class="contact-section">
+                <p style="margin-bottom: 15px;"><strong>Email principal :</strong></p>
+                <p style="margin: 0;"><a href="mailto:contact@marocautoguide.com"
+                        class="contact-link">contact@marocautoguide.com</a></p>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--text-light);">Délai de réponse : 72 heures
+                    maximum</p>
+            </div>
+
+            <h3>Procédure d'exercice des droits</h3>
+            <p>Pour exercer l'un de vos droits (accès, rectification, suppression, opposition, portabilité) :</p>
+            <ol style="padding-left: 24px;">
+                <li style="margin-bottom: 10px;">Envoyez un email à <a
+                        href="mailto:contact@marocautoguide.com?subject=Exercice%20des%20droits%20Loi%2009-08"
+                        class="contact-link">contact@marocautoguide.com</a></li>
+                <li style="margin-bottom: 10px;">Précisez le droit demandé et les données concernées</li>
+                <li style="margin-bottom: 10px;">Joignez une copie de votre pièce d'identité (si demande d'accès
+                    personnalisée)</li>
+                <li>Nous confirmerons la réception et traiterons dans les 30 jours calendario</li>
+            </ol>
+
+            <h3>Recours légaux (CNDP)</h3>
+            <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une plainte à la
+                <strong>Commission Nationale de Contrôle de la Protection des Données Personnelles (CNDP)</strong> du
+                Maroc :</p>
+            <ul>
+                <li><strong>Site officiel :</strong> www.cndp.ma</li>
+                <li><strong>Procédure :</strong> Dépôt de plainte en ligne ou par courrier recommandé</li>
+            </ul>
+        </section>
+
+        <div class="footer">
+            <div class="footer-info">
+                <strong>Responsable du traitement :</strong> Maroc Auto Guide
+            </div>
+            <div class="footer-info">
+                <strong>Email de contact :</strong> <a href="mailto:contact@marocautoguide.com"
+                    class="contact-link">contact@marocautoguide.com</a>
+            </div>
+            <div class="footer-info last-update">
+                Dernière mise à jour : 8 mars 2026
+            </div>
+            <div class="footer-info"
+                style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
+                <p style="margin: 0; font-size: 0.8rem; color: var(--text-light);">
+                    Cette politique s'applique à l'application Vin Scan Pro version 1.0 et ultérieures.<br>
+                    Vous serez notifié de tout changement significatif par mise à jour dans l'application.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
